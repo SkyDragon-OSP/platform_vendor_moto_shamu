@@ -82,28 +82,3 @@ PRODUCT_PACKAGES += \
 # Prebuilt vendor/libs needed for compilation
 PRODUCT_PACKAGES += \
     libtime_genoff
-
-# Latin IME lib - gesture typing
-PRODUCT_COPY_FILES += \
-    vendor/moto/shamu/prebuilt/common/lib/libjni_latinime.so:system/lib/libjni_latinime.so
-
-# APN list
-PRODUCT_COPY_FILES += \
-    vendor/moto/shamu/prebuilt/common/etc/apns-conf.xml:system/etc/apns-conf.xml
-
-# SuperSU
-PRODUCT_COPY_FILES += \
-    vendor/moto/shamu/prebuilt/common/etc/UPDATE-SuperSU.zip:system/addon.d/UPDATE-SuperSU.zip \
-    vendor/moto/shamu/prebuilt/common/etc/init.d/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon
- 
-# Backup Tool
-PRODUCT_COPY_FILES += \
-    vendor/moto/shamu/prebuilt/common/addon.d/50-skydragon.sh:system/addon.d/50-skydragon.sh \
-    vendor/moto/shamu/prebuilt/common/addon.d/99-backup.sh:system/addon.d/99-backup.sh \
-    vendor/moto/shamu/prebuilt/common/bin/backuptool.sh:system/bin/backuptool.sh \
-    vendor/moto/shamu/prebuilt/common/bin/backuptool.functions:system/bin/backuptool.functions \
-    vendor/moto/shamu/prebuilt/common/etc/backup.conf:system/etc/backup.conf
-
-# Boot animation
-PRODUCT_COPY_FILES += \
-    vendor/moto/shamu/prebuilt/shamu/system/media/bootanimation.zip:system/media/bootanimation.zip
