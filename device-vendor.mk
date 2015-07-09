@@ -18,6 +18,23 @@ $(call inherit-product, vendor/moto/shamu/shamu-vendor-blobs.mk)
 
 #fmas n6 specific
 PRODUCT_PROPERTY_OVERRIDES += \
+	PRODUCT_NAME=Shamu \
+    BUILD_FINGERPRINT=google/shamu/shamu:5.1.1/LMY48G/1914015:user/release-keys \
+    PRIVATE_BUILD_DESC="shamu-user 5.1.1 LMY48G 1914015 release-keys"
+	keyguard.no_require_sim=true \
+    ro.url.legal=http://www.google.com/intl/%s/mobile/android/basic/phone-legal.html \
+    ro.url.legal.android_privacy=http://www.google.com/intl/%s/mobile/android/basic/privacy.html \
+    ro.com.google.clientidbase=android-google \
+    ro.com.android.wifi-watchlist=GoogleGuest \
+    ro.setupwizard.enterprise_mode=1 \
+    ro.com.android.dateformat=MM-dd-yyyy \
+    ro.com.android.dataroaming=false \
+    drm.service.enabled=true \
+    net.tethering.noprovisioning=true \
+    persist.sys.dun.override=0 \
+    ro.build.selinux=1 \
+    ro.adb.secure=1 \
+    ro.config.vc_music_vol_steps=30
     fmas.spkr_6ch=35,20,110 \
     fmas.spkr_2ch=35,25 \
     fmas.spkr_angles=10 \
@@ -65,3 +82,28 @@ PRODUCT_PACKAGES += \
 # Prebuilt vendor/libs needed for compilation
 PRODUCT_PACKAGES += \
     libtime_genoff
+
+# Latin IME lib - gesture typing
+PRODUCT_COPY_FILES += \
+    vendor/moto/shamu/prebuilt/common/lib/libjni_latinime.so:system/lib/libjni_latinime.so
+
+# APN list
+PRODUCT_COPY_FILES += \
+    vendor/moto/shamu/prebuilt/common/etc/apns-conf.xml:system/etc/apns-conf.xml
+
+# SuperSU
+PRODUCT_COPY_FILES += \
+    vendor/moto/shamu/prebuilt/common/etc/UPDATE-SuperSU.zip:system/addon.d/UPDATE-SuperSU.zip \
+    vendor/moto/shamu/prebuilt/common/etc/init.d/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon
+ 
+# Backup Tool
+PRODUCT_COPY_FILES += \
+    vendor/moto/shamu/prebuilt/common/addon.d/50-skydragon.sh:system/addon.d/50-skydragon.sh \
+    vendor/moto/shamu/prebuilt/common/addon.d/99-backup.sh:system/addon.d/99-backup.sh \
+    vendor/moto/shamu/prebuilt/common/bin/backuptool.sh:system/bin/backuptool.sh \
+    vendor/moto/shamu/prebuilt/common/bin/backuptool.functions:system/bin/backuptool.functions \
+    vendor/moto/shamu/prebuilt/common/etc/backup.conf:system/etc/backup.conf
+
+# Boot animation
+PRODUCT_COPY_FILES += \
+    vendor/moto/shamu/prebuilt/shamu/system/media/bootanimation.zip:system/media/bootanimation.zip
