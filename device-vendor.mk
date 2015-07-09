@@ -20,7 +20,7 @@ $(call inherit-product, vendor/moto/shamu/shamu-vendor-blobs.mk)
 PRODUCT_PROPERTY_OVERRIDES += \
 	PRODUCT_NAME=Shamu \
     BUILD_FINGERPRINT=google/shamu/shamu:5.1.1/LMY48G/1914015:user/release-keys \
-    PRIVATE_BUILD_DESC="shamu-user 5.1.1 LMY48G 1914015 release-keys"
+    PRIVATE_BUILD_DESC="shamu-user 5.1.1 LMY48G 1914015 release-keys" \
 	keyguard.no_require_sim=true \
     ro.url.legal=http://www.google.com/intl/%s/mobile/android/basic/phone-legal.html \
     ro.url.legal.android_privacy=http://www.google.com/intl/%s/mobile/android/basic/privacy.html \
@@ -34,7 +34,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.dun.override=0 \
     ro.build.selinux=1 \
     ro.adb.secure=1 \
-    ro.config.vc_music_vol_steps=30
+    ro.config.vc_music_vol_steps=30 \
     fmas.spkr_6ch=35,20,110 \
     fmas.spkr_2ch=35,25 \
     fmas.spkr_angles=10 \
