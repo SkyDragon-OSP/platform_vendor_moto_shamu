@@ -115,6 +115,7 @@ PRODUCT_COPY_FILES += \
     vendor/moto/shamu/proprietary/lib/libjni_latinime.so:system/lib/libjni_latinime.so \
     vendor/moto/shamu/proprietary/lib/soundfx/libspeakerbundle.so:system/lib/soundfx/libspeakerbundle.so \
     vendor/moto/shamu/proprietary/media/bootanimation.zip:system/media/bootanimation.zip \
+    vendor/moto/shamu/proprietary/priv-app/Messaging/Messaging.apk:system/priv-app/Messaging/Messaging.apk \
 	vendor/moto/shamu/proprietary/vendor/lib/libactuator_lc898122_camcorder.so:system/vendor/lib/libactuator_lc898122_camcorder.so \
     vendor/moto/shamu/proprietary/vendor/lib/libactuator_lc898122_camera.so:system/vendor/lib/libactuator_lc898122_camera.so \
     vendor/moto/shamu/proprietary/vendor/lib/libactuator_lc898122.so:system/vendor/lib/libactuator_lc898122.so \

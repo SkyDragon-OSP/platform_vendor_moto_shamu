@@ -19,8 +19,6 @@ $(call inherit-product, vendor/moto/shamu/shamu-vendor-blobs.mk)
 #fmas n6 specific
 PRODUCT_PROPERTY_OVERRIDES += \
 	PRODUCT_NAME=Shamu \
-    BUILD_FINGERPRINT=google/shamu/shamu:5.1.1/LMY48G/1914015:user/release-keys \
-    PRIVATE_BUILD_DESC="shamu-user 5.1.1 LMY48G 1914015 release-keys" \
 	keyguard.no_require_sim=true \
     ro.url.legal=http://www.google.com/intl/%s/mobile/android/basic/phone-legal.html \
     ro.url.legal.android_privacy=http://www.google.com/intl/%s/mobile/android/basic/privacy.html \
