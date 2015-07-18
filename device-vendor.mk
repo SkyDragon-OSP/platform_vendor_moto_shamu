@@ -16,6 +16,8 @@
 
 $(call inherit-product, vendor/moto/shamu/shamu-vendor-blobs.mk)
 
+PRODUCT_PACKAGE_OVERLAYS := vendor/moto/shamu/overlay
+
 #fmas n6 specific
 PRODUCT_PROPERTY_OVERRIDES += \
 	PRODUCT_NAME=Shamu \
@@ -45,6 +47,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.audio.fluence.voicecall=true \
     persist.audio.fluence.voicerec=false \
     persist.audio.fluence.speaker=false 
+	persist.sys.scrollingcache=3
 
 # Prebuilt APKs
 PRODUCT_PACKAGES += \
