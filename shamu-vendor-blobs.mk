@@ -44,7 +44,6 @@ PRODUCT_COPY_FILES += \
     vendor/moto/shamu/proprietary/vendor/firmware/adsp.b12:system/vendor/firmware/adsp.b12 \
     vendor/moto/shamu/proprietary/vendor/firmware/adsp.mdt:system/vendor/firmware/adsp.mdt \
     vendor/moto/shamu/proprietary/vendor/firmware/VRGain.bin:system/vendor/firmware/VRGain.bin \
-    vendor/moto/shamu/proprietary/etc/apns-conf.xml:system/etc/apns-conf.xml \
     vendor/moto/shamu/proprietary/etc/Bluetooth_cal.acdb:system/etc/Bluetooth_cal.acdb \
     vendor/moto/shamu/proprietary/etc/General_cal.acdb:system/etc/General_cal.acdb \
     vendor/moto/shamu/proprietary/etc/Global_cal.acdb:system/etc/Global_cal.acdb \
@@ -68,7 +67,6 @@ PRODUCT_COPY_FILES += \
     vendor/moto/shamu/proprietary/vendor/lib/libacdbrtac.so:system/vendor/lib/libacdbrtac.so \
     vendor/moto/shamu/proprietary/vendor/lib/libadiertac.so:system/vendor/lib/libadiertac.so \
     vendor/moto/shamu/proprietary/vendor/lib/libaudcal.so:system/vendor/lib/libaudcal.so \
-    vendor/moto/shamu/proprietary/vendor/lib/libaudioroute.so:system/vendor/lib/libaudioroute.so \
     vendor/moto/shamu/proprietary/vendor/lib/libcsd-client.so:system/vendor/lib/libcsd-client.so \
     vendor/moto/shamu/proprietary/vendor/firmware/acdb.mbn:system/vendor/firmware/acdb.mbn \
     vendor/moto/shamu/proprietary/vendor/firmware/cy8c20247_24lkxi.hex:system/vendor/firmware/cy8c20247_24lkxi.hex \
@@ -257,7 +255,6 @@ PRODUCT_COPY_FILES += \
     vendor/moto/shamu/proprietary/vendor/lib/libcneapiclient.so:system/vendor/lib/libcneapiclient.so \
     vendor/moto/shamu/proprietary/bin/diag_klog:system/bin/diag_klog \
     vendor/moto/shamu/proprietary/bin/diag_mdlog:system/bin/diag_mdlog \
-    vendor/moto/shamu/proprietary/bin/diag_qshrink4_daemon:system/bin/diag_qshrink4_daemon \
     vendor/moto/shamu/proprietary/etc/diag/mdm/Connection_Issues_V6+DPL+UIM.cfg:system/etc/diag/mdm/Connection_Issues_V6+DPL+UIM.cfg \
     vendor/moto/shamu/proprietary/etc/diag/mdm/FIT_V16_1.cfg:system/etc/diag/mdm/FIT_V16_1.cfg \
     vendor/moto/shamu/proprietary/etc/diag/mdm/FIT_V16_2_volte_full_ip.cfg:system/etc/diag/mdm/FIT_V16_2_volte_full_ip.cfg \
@@ -378,7 +375,6 @@ PRODUCT_COPY_FILES += \
     vendor/moto/shamu/proprietary/bin/qmi_motext_hook:system/bin/qmi_motext_hook \
     vendor/moto/shamu/proprietary/bin/qmuxd:system/bin/qmuxd \
     vendor/moto/shamu/proprietary/bin/radish:system/bin/radish \
-    vendor/moto/shamu/proprietary/bin/ramdump:system/bin/ramdump \
     vendor/moto/shamu/proprietary/bin/tcmd_mini:system/bin/tcmd_mini \
     vendor/moto/shamu/proprietary/lib/libdetectmodem.so:system/lib/libdetectmodem.so \
     vendor/moto/shamu/proprietary/lib/libmdmdetect.so:system/lib/libmdmdetect.so \
